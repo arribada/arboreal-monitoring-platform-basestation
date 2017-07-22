@@ -36,4 +36,4 @@ WORKDIR /usr/src/app
 
 CMD ["bash","start.sh"]
 
-# RUN echo "*/1 * * * * /usr/src/app/rsync_cams.sh" | crontab
+RUN echo "*/1 * * * * /usr/src/app/rsync_cams.sh" | crontab
